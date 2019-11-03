@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "GitResults";
+}
+
+<h1>GitResults</h1>
+
+@{ 
+    var gitView = ViewBag.Message;
+}
+
+<h2>Owner: @gitView.repository.Result.Owner.Login</h2>
+<h3>Repo Full Name: @gitView.repository.Result.FullName</h3>
+<h4>Repo URL: @gitView.repository.Result.HtmlUrl</h4>
+<h4>Watchers: @gitView.repository.Result.StargazersCount</h4>
+<h4>Forks: @gitView.repository.Result.ForksCount</h4>
